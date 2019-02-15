@@ -9,6 +9,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    public MainActivity mc;
     public EditText editText1;
     public EditText editText2;
     public EditText editText3;

@@ -12,10 +12,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class OutActivity extends AppCompatActivity {
+    public static OutActivity ot;
     public TextView outText;
     public Button button2;
     public Button button3;
     public Button button4;
+    public String msg;
     private ClipboardManager myClipboard;
     private ClipData myClip;
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,7 @@ public class OutActivity extends AppCompatActivity {
         button4=(Button)findViewById(R.id.button4);
 
         Intent intent=getIntent();
-        String msg=intent.getStringExtra("OUTPUT");
+        msg=intent.getStringExtra("OUTPUT");
         outText=(TextView)findViewById(R.id.outText);
         outText.setText(msg);
 
@@ -57,7 +59,9 @@ public class OutActivity extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(OutActivity.this,"敬请期待",Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(OutActivity.this,biaoqingbao.class);
+                intent.putExtra("out2",msg);
+                startActivity(intent);
             }
         });
     }
