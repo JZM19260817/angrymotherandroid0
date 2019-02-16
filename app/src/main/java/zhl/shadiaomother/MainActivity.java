@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                         "你们搞这个群干什么?我儿子每一科的成绩都不过那个平均分呐，他现在初二!" +
                         "你叫我儿子怎么办啊!他还不到高中啊好不好!你们这是什么群啊?你们害死我儿子了!" +
                         "谁是群主?快点出来你们群主!再不来我去报警了啊!我跟你们说你们这一帮人啊，一天到晚啊搞这些什么"+
-                        editText2.getText().toString()+"啊什么"+editText3.getText().toString()+"啊会害死你们哒！你们没有前途?我跟你说你们这"+
+                        editText2.getText().toString()+"啊什么"+editText3.getText().toString()+"啊会害死你们哒！你们有没有前途?我跟你说你们这"+
                         editText1.getText().toString()+"多个人好好学习不好吗，一天到晚在"+editText3.getText().toString()+
                         "是不是人啊?你们一天到晚"+editText3.getText().toString()+"不好好学习,会没前途的!"+
                         editText3.getText().toString()+"害死人!";
